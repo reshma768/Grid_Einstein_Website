@@ -418,7 +418,7 @@ h2 {
     #paper2,
     #image-collection,
     #blogs {
-      max-width: 100%; /* Make them full width */
+      max-width: 95.5%; /* Make them full width */
       padding: 10px; /* Add padding for better spacing */
     }
   
