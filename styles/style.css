@@ -1,0 +1,472 @@
+#title {
+    text-align: center;
+    background-color: #13344C; /* Dark blue background */
+    color: #FFD700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr auto auto auto auto auto;
+    grid-gap: 10px;
+    grid-template-areas:
+      "about-me about-me image image"
+      "hobbies hobbies hobbies hobbies"
+      "published-papers published-papers published-papers published-papers"
+      "paper1 paper1 paper2 paper2"
+      "image-collection image-collection image-collection image-collection"
+      "blogs blogs blogs blogs";
+  }
+  
+  .grid-item1 {
+    grid-area: about-me;
+    
+    
+  }
+  
+  .grid-item2 {
+    grid-area: image;
+    
+   
+  }
+  
+  .grid-item3 {
+    grid-area: hobbies;
+  }
+  
+  .grid-item4 {
+    grid-area: published-papers;
+  }
+  
+  .grid-itemp1 {
+    grid-area: paper1;
+  }
+
+  .grid-itemp2 {
+    grid-area: paper2;
+  }
+
+  
+  .grid-item5 {
+    grid-area: image-collection;
+  }
+  
+  .grid-item6 {
+    grid-area: blogs;
+  }
+
+
+ 
+/* Styles for the navigation bar */
+nav {
+    background-color:#abae77;
+    padding: 10px 0;
+    text-align: center; /* Center the navigation items */
+  }
+
+  .headerelements:hover {
+    color: #dee5e9; /* Change text color on hover */
+    background-color: #3498db; /* Change background color on hover */
+    border-color: #dee5e9; /* Change border color on hover */
+}
+
+.headerelements[href="#image"]:active,
+.headerelements[href="#image"]:focus {
+    background-color: #3498db;
+    color: #ecf0f1;
+    border-color: #3498db;
+}
+  
+  /* Style for each navigation link */
+  .headerelements {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: inline-block;
+    width: 130px; /* Set a fixed width for all links */
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+
+  /* Add a box style for the "Hobbies" link */
+.headerelements[href="#hobbies"],
+.headerelements[href="#about-me"],
+.headerelements[href="#image"],
+.headerelements[href="#image-collection"],
+.headerelements[href="#blogs"],
+.headerelements[href="#published-papers"],
+.headerelements[href="#paper1"],
+.headerelements[href="#paper2"]
+
+{
+    padding: 5px 0px;
+     /* Adjust the padding to style the box size */
+    border: 2px solid #e1e7ea;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  .headerelements:hover {
+    color: #dee5e9; /* Change text color on hover */
+  }
+  
+  /* Add a vertical bar separator */
+  .headerelements:not(:last-child)::after {
+    margin: 0 10px; /* Spacing between links and separators */
+    color: #ecf0f1; /* Separator color */
+  }
+  
+  
+#about-me,  #image-collection, #blogs , #paper1, #paper2 {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color:#c6bcc6;
+    border-radius: 10px;
+}
+
+.tribute-info-p{
+    text-align: left;
+}
+
+#image{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+    padding-left: 92px;
+    padding-right: 77px;
+    background-color: #c6bcc6;
+    border-radius: 10px;
+}
+
+#hobbies
+{
+    text-align: center;
+    margin: 20px ,auto ;
+    max-width: 1200px;
+    padding: 20px;
+    background-color:#c6bcc6;
+    border-radius: 10px;
+
+}
+#published-papers
+{
+    text-align: center;
+    margin: 20px ,auto ;
+    max-width: 1200px;
+    padding: 20px;
+    background-color:#c6bcc6;
+    border-radius: 10px;
+
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    text-align: left;
+    margin: 10px 0;
+    color: #333333;
+}
+
+.hobby-title {
+    font-weight: bold;
+}
+
+
+
+
+#image-block {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+#image-block h2 {
+    font-style: italic;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.span-year {
+    color: rgb(110, 159, 231);
+    font-weight: bold;
+}
+
+h2 {
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tribute-info-p, .blog-content {
+    background-color: rgb(193, 207, 226);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/* Blog Section Styles */
+/* Blog Section Styles */
+.blog-section {
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide overflow content outside the section */
+}
+
+.blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Center-align the title */
+}
+
+.blog-post {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    position: relative; /* Enable absolute positioning of text */
+}
+
+.blog-post h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center; /* Center-align the post title */
+    position: absolute;
+    top: -30px; /* Adjust vertical position to create a mountain shape */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.blog-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Blog Post Hover Effect */
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.papers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+
+
+.paper-icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: auto 10px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+}
+
+.paper-content strong {
+    font-weight: bold;
+
+}
+
+.paper-content p {
+    margin: 10px 0;
+}
+
+ 
+
+
+
+#image-collection {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 1090px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#image-collection {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 1090px;
+    padding: 20px;
+    background-color:#c6bcc6;
+    border-radius: 10px;
+}
+
+#image-collection h2 {
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.image-scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.image-scroll {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.image-item {
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 300px; /* Adjust the width of each image item as needed */
+    height: 200px; /* Adjust the height of each image item as needed */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+/* Set the desired dimensions for the image */
+.image-container {
+    width: 300px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+}
+
+
+/* Original styles that apply to all screen sizes */
+
+/* Add the following media query for screens less than 500px wide */
+@media (max-width: 500px) {
+    /* Adjust the styles for smaller screens here */
+    .container {
+      grid-template-columns: 1fr; /* Change to a single column layout */
+      grid-template-areas:
+        "about-me"
+        "image"
+        "hobbies"
+        "published-papers"
+        "paper1"
+        "paper2"
+        "image-collection"
+        "blogs";
+    }
+  
+    /* Make individual sections full-width */
+    #about-me,
+    #image,
+    #hobbies,
+    #published-papers,
+    #paper1,
+    #paper2,
+    #image-collection,
+    #blogs {
+      max-width: 100%; /* Make them full width */
+      padding: 10px; /* Add padding for better spacing */
+    }
+  
+    /* Adjust the header styles for smaller screens */
+    .headerelements {
+    /* Full-width navigation links */
+      margin: 10px 0; /* Add margin to separate links */
+    }
+  }
+  /* Add this inside the existing media query for screens less than 500px */
+@media (max-width: 500px) {
+  /* Keep the grids side-by-side */
+  .container {
+    grid-template-columns: 1fr 1fr; /* Set both grids to be side-by-side */
+    grid-template-areas:
+      "about-me image"
+      "hobbies hobbies"
+      "published-papers published-papers"
+      "paper1 paper2"
+      "image-collection image-collection"
+      "blogs blogs";
+  }
+
+  /* Adjust the styles for the 'image' section */
+  #image {
+    padding: 1px;
+    padding-top: 40px;
+    background-color: #c6bcc6;
+    border-radius: 10px;
+  }
+
+  /* Adjust the styles for the 'about-me' section */
+  #about-me {
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #c6bcc6;
+    border-radius: 10px;
+  }
+}
+/* Add this inside the existing media query for screens less than 500px */
+@media (max-width: 500px) {
+    /* Keep the 'about-me' and 'image' grids side-by-side */
+    .container {
+      grid-template-columns: 1fr 1fr; /* Set both grids to be side-by-side */
+      grid-template-areas:
+        "about-me image"
+        "hobbies hobbies"
+        "published-papers published-papers"
+        "paper1 paper2"
+        "image-collection image-collection"
+        "blogs blogs";
+    }
+}
