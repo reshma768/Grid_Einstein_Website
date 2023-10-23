@@ -1,5 +1,5 @@
 #title {
-    text-align: left;
+    text-align: center;
     background-color: #13344C; /* Dark blue background */
     color: #FFD700;
     
@@ -138,8 +138,8 @@ nav {
     margin: 20px auto;
     max-width: 1200px;
     padding: 10px;
-    padding-left: 92px;
-    padding-right: 77px;
+    padding-left: 110px;
+    padding-right: 83px;
     background-color: #c6bcc6;
     border-radius: 10px;
 }
